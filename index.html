@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXEE17ZF5T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QXEE17ZF5T');
+    </script>
+
+    <title>Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners</title>
+    <link rel="icon" type="image/png" href="img/favicon_2.png">
+
+    <meta name="description" content="Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <!-- <meta property="og:image" content="https://robot-help.github.io/img/share_image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://robot-help.github.io/"/>
+    <meta property="og:title" content="Robots That Ask For Help" />
+    <meta property="og:description" content="Project page for Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners." /> -->
+
+        <!--TWITTER-->
+    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Robots That Ask For Help" />
+    <meta name="twitter:description" content="Project page for Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners." />
+    <meta name="twitter:image" content="https://robot-help.github.io/img/share_image.png" /> -->
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+	
+    <style>
+        .nav-pills {
+          position: relative;
+          display: inline;
+        }
+        .imtip {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="row mt-4">
+            <h2 class="col-md-12 text-center">
+                <b><font size="+6">Robots That Ask For Help</font></b>: </br> Uncertainty Alignment for Large Language Model Planners </br> 
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                <br>
+                <li><a href="//allenzren.github.io">Allen Z. Ren</a></li>
+                <li><a href="//www.anushridixit.com/">Anushri Dixit</a></li>
+                <li><a href="//www.linkedin.com/in/alexandra-bodrova-435593152/">Alexandra Bodrova</a></li>
+                <li><a href="//research.google/people/SumeetSingh/">Sumeet Singh</a></li>
+                <li><a href="//stephentu.github.io/">Stephen Tu</a></li>
+                <li><a href="//www.linkedin.com/in/noah-brown-40157b124/">Noah Brown</a></li>
+                <li><a href="//www.linkedin.com/in/pengxu0/">Peng Xu</a></li>
+                <br>
+                <li><a href="http://www.leilatakayama.org/">Leila Takayama</a></li>
+                <li><a href="//fxia22.github.io/">Fei Xia</a></li>
+                <li><a href="//www.linkedin.com/in/jacob-varley-293b3446/">Jake Varley</a></li>
+                <li><a href="//www.zhenjiaxu.com/">Zhenjia Xu</a></li>
+                <li><a href="//dorsa.fyi/">Dorsa Sadigh</a></li>
+                <li><a href="//andyzeng.github.io/">Andy Zeng</a></li>
+                <li><a href="//irom-lab.princeton.edu/majumdar/">Anirudha Majumdar</a></li>
+                <br>
+                <br>
+                    <a href="https://www.deepmind.com/">
+                        <image src="img/google-deepmind-logo.png" height="35px"> 
+                        <!-- Google DeepMind -->
+                    </a>
+                    &nbsp&nbsp&nbsp
+                    <a href="https://www.princeton.edu/">
+                        <image src="img/PU1line.svg" height="55px"> 
+                        <!-- Princeton University                        -->
+                    </a>
+                </ul>
+            </div>
+            <div class="col-md-12 text-center">
+                <h4>CoRL 2023, Best Student Paper</h4>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-2 text-center">
+                <a href="https://arxiv.org/abs/2307.01928">
+                <image src="img/paper_small.png" height="45px">
+                <h4><strong>Paper</strong></h4>
+                <!-- <h6>Paper</h6> -->
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="https://youtu.be/xCXx09gfhx4">
+                <image src="img/youtube_icon.png" height="45px">
+                <h4><strong>Video</strong></h4>
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="https://github.com/google-research/google-research/tree/master/language_model_uncertainty">
+                <image src="img/github.png" height="45px">
+                <h4><strong>Code</strong></h4>
+                <!-- <h6>Code (coming soon)</h6> -->
+                </a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a href="https://colab.research.google.com/drive/1EvAmHfFrasb_eALj4vWNMhwlJCdNfIAg?usp=sharing">
+                <image src="img/colab.png" height="45px">
+                <h4><strong>Demo</strong></h4>
+                <!-- <h6>Demo (coming soon)</h6> -->
+                </a>
+            </div>
+            <!-- <li>
+                <a href="https://ai.googleblog.com/2022/08/?.html">
+                <image src="img/google-ai-blog-small.png" height="60px">
+                    <image src="img/new.png" height="20px" class="imtip">
+                    <h4><strong>Blogpost</strong></h4>
+                </a>
+            </li> -->
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <video id="v0" width="80%" preload="metadata" playsinline muted loop autoplay>
+                    <source src="videos/knowno-microwave-score-handbrake.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <h3 class="mt-4 mb-2">
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Large language models (LLMs) exhibit a wide range of promising capabilities --- from step-by-step planning to commonsense reasoning --- that may provide utility for robots, but remain prone to confidently hallucinated predictions. In this work, we present KnowNo, which is a framework for measuring and aligning the uncertainty of LLM-based planners such that they know when they don't know and ask for help when needed. KnowNo builds on the theory of conformal prediction to provide statistical guarantees on task completion while minimizing human help in complex multi-step planning settings. Experiments across a variety of simulated and real robot setups that involve tasks with different modes of ambiguity (e.g., from spatial to numeric uncertainties, from human preferences to Winograd schemas) show that KnowNo performs favorably over modern baselines (which may involve ensembles or extensive prompt tuning) in terms of improving efficiency and autonomy, while providing formal assurances. KnowNo can be used with LLMs out of the box without model-finetuning, and suggests a promising lightweight approach to modeling uncertainty that can complement and scale with the growing capabilities of foundation models.
+                </p>
+                <p style="text-align:center;">
+                    <image src="img/robot-help-teaser.png" width="100%">
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <br>
+            <div class="col-md-6 text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xCXx09gfhx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 text-center">
+                <blockquote class="twitter-tweet"><p lang="en" dir="ltr" width="250">LLMs can generate plans and write robot code 📝 but they can also make mistakes. How do we get LLMs to 𝘬𝘯𝘰𝘸 𝘸𝘩𝘦𝘯 𝘵𝘩𝘦𝘺 𝘥𝘰𝘯&#39;𝘵 𝘬𝘯𝘰𝘸 🤷 and ask for help?<br><br>Read more on how we can do this (with statistical guarantees) for LLMs on robots 👇<a href="https://t.co/D7mHGzNP3p">https://t.co/D7mHGzNP3p</a> <a href="https://t.co/M9lUqlZ5cB">pic.twitter.com/M9lUqlZ5cB</a></p>&mdash; Allen Z. Ren (@allenzren) <a href="https://twitter.com/allenzren/status/1677000811803443213?ref_src=twsrc%5Etfw">July 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+
+        <!-- <div class="row justify-content-md-center">
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">LLMs can generate plans and write robot code 📝 but they can also make mistakes. How do we get LLMs to 𝘬𝘯𝘰𝘸 𝘸𝘩𝘦𝘯 𝘵𝘩𝘦𝘺 𝘥𝘰𝘯&#39;𝘵 𝘬𝘯𝘰𝘸 🤷 and ask for help?<br><br>Read more on how we can do this (with statistical guarantees) for LLMs on robots 👇<a href="https://t.co/D7mHGzNP3p">https://t.co/D7mHGzNP3p</a> <a href="https://t.co/M9lUqlZ5cB">pic.twitter.com/M9lUqlZ5cB</a></p>&mdash; Allen Z. Ren (@allenzren) <a href="https://twitter.com/allenzren/status/1677000811803443213?ref_src=twsrc%5Etfw">July 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div> -->
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <br>
+                <h3>
+                    Goal
+                </h3>
+                <p class="text-justify">
+                    In the setting of the robot with access to a LLM-based planner and human help, we aim to achieve both: (1) <strong>calibrated confidence:</strong> the robot should seek sufficient help to ensure a statistically guaranteed level of task success specified by the user, and (2) <strong>minimal help:</strong> the robot should minimize the overall amount of help it seeks by narrowing down possible ambiguities in a task. We collectively refer to these sufficiency and minimality conditions as <strong>uncertainty alignment</strong>. 
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <h3>
+                    Approach
+                </h3>
+                <p class="text-justify">
+                    KnowNo builds upon <a href="https://en.wikipedia.org/wiki/Conformal_prediction">conformal prediction</a> (CP) to formally quantify the LLM uncertainty and achieve uncertainty alignment. KnowNo first constructs a calibration dataset that covers diverse scenarios that the robot encounters. For each scenario, KnowNo prompts LLM to generate plausible options and then ask it to choose one --- similar to a Multiple Choice Question Answering (MCQA) setup. KnowNo obtains the likelihood of the LLM predicting the five choices: A, B, C, D, E. Then calibration is done using the likelihood of the true options of the calibration data, and the result is a likelihood threshold. At test time given a new scenario, the prediction set includes options with likelihood above the threshold. CP provides statistical guarantee that the true option is included in the prediction set with probability of a user-specified level. In addition, CP affords the benefit of producing smallest average prediction set size with theoretical guarantees.
+                <br><br><p style="text-align:center;">
+                    <image src="img/mcqa-cp.png" width="100%">
+                </p><br>
+                KnowNo employs a simple setup for human intervention --- if the prediction set at a scenario is not a singleton (i.e., includes more than one option), KnowNo deems the robot uncertain about the correct action and triggers human help. With human truthfully providing help, KnowNo converts the coverage guarantee from CP to <strong>task completion guarantee</strong>. As CP provides small prediction sets, the human help is minimal. These two properties achieve the goal of calibrated confidence and minimal help.
+                <br>
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
+                            <source src="videos/knowno-cp-handbrake.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <br>
+                KnowNo can also be applied in <strong>multi-step</strong> planning settings (with possibly multiple acceptable options per step) with novel extensions of CP derived in our work. KnowNo provides statistical guarantees on episode-level task completion and minimizes human intervention on both sequence and step levels.
+                <br><br>
+                <p style="text-align:center;">
+                    <image src="img/multistep-bimanual.png" width="100%">
+                </p>
+                <br>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h3>Experiment Videos</h3>
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Mobile Manipulation (<a href="prompts/mobile_tasks.txt">full list of tasks with objects involved</a>)</h5>
+                    <div class="card-body">
+
+                        <p>Choose a user instruction:</p>
+                        <select class="form-select" size="8" aria-label="size 5 select example">
+                            <option value="saycan_1">
+                                1) Pick up the bottled water.
+                            </option>
+                            <option value="saycan_2">
+                                2) Bring me the chips.
+                            </option>
+                            <option value="saycan_3">
+                                3) Put the apple in the drawer.
+                            </option>
+                            <option value="saycan_4">
+                                4) Put the rice chips in the top drawer.
+                            </option>
+                            <option value="saycan_5">
+                                5) Put the chips in the drawer.
+                            </option>
+                            <option value="saycan_6">
+                                6) Put the soda in the drawer.
+                            </option>
+                            <option value="saycan_7">
+                                7) Put the apple near the bottle.
+                            </option>
+                            <option value="saycan_8">
+                                8) Put the multigrain chips near the fruit.
+                            </option>
+                            <option value="saycan_9">
+                                9) There is the kettle chips and RedBull. I ate it already. Can you dispose of it?
+                            </option>
+                            <option value="saycan_10">
+                                10) There is the sponge and energy bar. I don't want to use it for clearning any more. Can you please dispose of it?
+                            </option>
+                            <option value="saycan_11">
+                                11) Can you dispose of that fruit?
+                            </option>
+                            <option value="saycan_12">
+                                12) There is the bottled tea and Coke. It is too sweet. Can you dispose of it?
+                            </option>
+                            <option value="saycan_13">
+                                13) Put the bowl in the microwave.
+                            </option>
+                            <option value="saycan_14">
+                                14) Put the bowl on the stove.
+                            <option value="saycan_15">
+                                15) Can you dispose of the chips? It should have expired.
+                            </option>
+                            <option value="saycan_16">
+                                16) Put the RedBull in the top drawer.
+                            </option>                            
+                        </select>
+
+                        <div class="col-md-12 mb-2">
+                            <video id="vid_saycan" width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/saycan/saycan_all_480p.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="row" id="content_saycan_1">
+                            <div class="col-md-12" id="code_saycan_1">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_2" style="display:none">
+                            <div class="col-md-12" id="code_saycan_2">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_3" style="display:none">
+                            <div class="col-md-12" id="code_saycan_3">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_4" style="display:none">
+                            <div class="col-md-12" id="code_saycan_4">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_5" style="display:none">
+                            <div class="col-md-12" id="code_saycan_5">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_6" style="display:none">
+                            <div class="col-md-12" id="code_saycan_6">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_7" style="display:none">
+                            <div class="col-md-12" id="code_saycan_7">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_8" style="display:none">
+                            <div class="col-md-12" id="code_saycan_8">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_9" style="display:none">
+                            <div class="col-md-12" id="code_saycan_9">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_10" style="display:none">
+                            <div class="col-md-12" id="code_saycan_10">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_11" style="display:none">
+                            <div class="col-md-12" id="code_saycan_11">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_12" style="display:none">
+                            <div class="col-md-12" id="code_saycan_12">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_13" style="display:none">
+                            <div class="col-md-12" id="code_saycan_13">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_14" style="display:none">
+                            <div class="col-md-12" id="code_saycan_14">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_15" style="display:none">
+                            <div class="col-md-12" id="code_saycan_15">
+                            </div>
+                        </div>
+                        <div class="row" id="content_saycan_16" style="display:none">
+                            <div class="col-md-12" id="code_saycan_16">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Multi-Step Tabletop Rearrangement</h5>
+                    <div class="card-body">
+
+                        <p>User instruction: Sort the items that human likes in the blue plate, and ones human dislikes in the green plate.<br>Items involved in each trial:</p>
+                        <select class="form-select" size="8" aria-label="size 5 select example">
+                            <option value="ur5_1">
+                                1) sunny-side-up egg, lettuce, mustard
+                            </option>
+                            <option value="ur5_2">
+                                2) mango, peanut butter, carrot
+                            </option>
+                            <option value="ur5_3">
+                                3) orange, pretzel, peach
+                            </option>
+                            <option value="ur5_4">
+                                4) carrot, pizza slice, egg
+                            </option>
+                            <option value="ur5_5">
+                                5) Skittles, lemon, pea
+                            </option>
+                            <option value="ur5_6">
+                                6) sunny-side-up egg, chicken drumstick, mustard
+                            </option>
+                            <option value="ur5_7">
+                                7) donut, carrot, egg
+                            </option>
+                            <option value="ur5_8">
+                                8) donut, waffle, pear
+                            </option>
+                            <option value="ur5_9">
+                                9) tomato, peach, apple
+                            </option>
+                            <option value="ur5_10">
+                                10) egg, Skittles, lettuce
+                            </option>
+                        </select>
+
+                        <div class="col-md-12 mb-2">
+                            <video id="vid_ur5" width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/ur5/ur5_all_handbrake_crop_720p.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="row" id="content_ur5_1">
+                            <div class="col-md-12" id="code_ur5_1">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_2" style="display:none">
+                            <div class="col-md-12" id="code_ur5_2">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_3" style="display:none">
+                            <div class="col-md-12" id="code_ur5_3">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_4" style="display:none">
+                            <div class="col-md-12" id="code_ur5_4">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_5" style="display:none">
+                            <div class="col-md-12" id="code_ur5_5">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_6" style="display:none">
+                            <div class="col-md-12" id="code_ur5_6">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_7" style="display:none">
+                            <div class="col-md-12" id="code_ur5_7">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_8" style="display:none">
+                            <div class="col-md-12" id="code_ur5_8">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_9" style="display:none">
+                            <div class="col-md-12" id="code_ur5_9">
+                            </div>
+                        </div>
+                        <div class="row" id="content_ur5_10" style="display:none">
+                            <div class="col-md-12" id="code_ur5_10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 mt-4 text-dark bg-light">
+                    <h5 class="card-header">Bimanual Manipulation (<a href="prompts/bimanual_tasks.txt">full list of tasks</a>)</h5>
+                    <div class="card-body">
+                        <p>Choose a user instruction:</p>
+                        <select class="form-select" size="8" aria-label="size 5 select example">
+                            <option value="bimanual_1">
+                                1) Pick up the pink plushie with the left arm.
+                            </option>
+                            <option value="bimanual_2">
+                                2) Pick up the banana with the left arm.
+                            </option>
+                            <option value="bimanual_3">
+                                3) Pick up the mango and pass it to me. I am next to the bin.
+                            </option>
+                            <option value="bimanual_4">
+                                4) Put the Sprite can in the bin closer to it.
+                            </option>
+                            <option value="bimanual_5">
+                                5) Pick up the Coke can with the arm closer to it.
+                            </option>
+                            <option value="bimanual_6">
+                                6) Pick up the yellow plushie.
+                            </option>
+                            <option value="bimanual_7">
+                                7) Pick up the detergent bottle.
+                            </option>
+                            <option value="bimanual_8">
+                                8) Pick up the detergent bottle at the handle.
+                            </option>
+                            <option value="bimanual_9">
+                                9) Move the container box to the front of the table.
+                            </option>
+                            <option value="bimanual_10">
+                                10) Move the detergent bottle on the sticky rubber mat to the front of the table.
+                            </option>
+                        </select>
+                        <div class="col-md-12 mb-2">
+                            <video id="vid_bimanual" width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/bimanual/bimanual_all_crop_handbrake_1080p.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="row" id="content_bimanual_1">
+                            <div class="col-md-12" id="code_bimanual_1">
+                            </div>
+                        </div>
+                        <div class="row" id="content_bimanual_2" style="display:none">
+                            <div class="col-md-12" id="code_bimanual_2">
+                            </div>
+                        </div>
+                        <div class="row" id="content_bimanual_3" style="display:none">
+                            <div class="col-md-12" id="code_bimanual_3">
+                            </div>
+                        </div>
+                        <div class="row" id="content_bimanual_4" style="display:none">
+                            <div class="col-md-12" id="code_bimanual_4">
+                            </div>
+                        </div>
+                        <div class="row" id="content_bimanual_5" style="display:none">
+                            <div class="col-md-12" id="code_bimanual_5">
+                            </div>
+                        </div>
+                        <div class="row" id="content_bimanual_6" style="display:none">
+                            <div class="col-md-12" id="code_bimanual_6">
+                            </div>
+                        </div>
+                        <div class="row" id="content_bimanual_7" style="display:none">
+                            <div class="col-md-12" id="code_bimanual_7">
+                            </div>
+                        </div>
+                        <div class="row" id="content_bimanual_8" style="display:none">
+                            <div class="col-md-12" id="code_bimanual_8">
+                            </div>
+                        </div>
+                        <div class="row" id="content_bimanual_9" style="display:none">
+                            <div class="col-md-12" id="code_bimanual_9">
+                            </div>
+                        </div>
+                        <div class="row" id="content_bimanual_10" style="display:none">
+                            <div class="col-md-12" id="code_bimanual_10">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-8">
+                <h3>
+                    Citation 
+                </h3>
+                <a href="https://arxiv.org/abs/2307.01928">[arxiv version]</a>
+                <div class="form-group col-md-12">
+                    <textarea id="bibtex" class="form-control" rows="8" readonly>
+@inproceedings{knowno2023,
+    title={Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners},
+    author={Ren, Allen Z. and Dixit, Anushri and Bodrova, Alexandra and Singh, Sumeet and Tu, Stephen and Brown, Noah and Xu, Peng and Takayama, Leila and Xia, Fei and Varley, Jake and Xu, Zhenjia and Sadigh, Dorsa and Zeng, Andy and Majumdar, Anirudha},
+    booktitle={arXiv preprint arXiv:2307.01928},
+    year={2023}
+}</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-4">
+            <div class="col-md-10 col-lg-8">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                    This work was partially supported by the NSF CAREER Award [\#2044149] and the Office of Naval Research [N00014-23-1-2148]. We thank Chad Boodoo for helping set up the UR5 hardware experiments, and Jensen Gao, Nathaniel Simon, and David Snyder for the helpful feedback on the paper. The website template is from <a href="https://code-as-policies.github.io/">Code as Policies</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
