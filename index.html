@@ -163,7 +163,7 @@
                 <p class="text-justify">
                     In EQA tasks, the robot starts at a random location in a 3D scene, explores the space,and stops when it is confident about answering the question. This can be a challenging problem due to highly diverse scenes and lack of an a-priori map of the environment. Previous works rely on training dedicated exploration policies and question answering modules from scratch, which can be data-inefficient and only handle simple questions.
                     <br><p style="text-align:center;">
-                        <image src="img/trial.png" width="80%">
+                        <image src="img/trial.png" width="60%">
                     </p>
                     We are interested in using pre-trained large <strong>vision-language models (VLMs)</strong> for EQA without additional training. VLMs have achieved impressive performance in answering complex questions about static 2D images that sometimes requires reasoning, and we find VLMs can also reason about semantically relevant regions to explore given the question and view. However, there are still two main challenges:<br>
                     <strong>1) Limited Internal Memory of VLMs.</strong> EQA benefits from the robot tracking previously explored regions and also ones yet to be explored but relevant for answering the question. However, VLMs do not have an internal memory for mapping the scene and storing such semantic information;<br>
@@ -191,7 +191,7 @@
                 </div>
                 We then leverage such semantic information with Frontier-Based Exploration (FBE). Frontiers are the locations between explored and unexplored regions, and we apply weighted sampling of the frontiers based on their semantic values on the map.
                 <br><br><p style="text-align:center;">
-                    <image src="img/semantic-map.png" width="80%">
+                    <image src="img/semantic-map.png" width="60%">
                 </p><br>
                 <!-- <br>
                 <div class="row mt-4">
@@ -202,7 +202,6 @@
                     </div>
                 </div>
                 <br> -->
-                <br>
                 Addressing the second issue of miscalibration, we leverage <strong>multi-step conformal prediction</strong>, which allows the robot to maintain a set of possible answers (<strong>mprediction set</strong>) over time, and stop when the set reduces to a single answer. Conformal prediction uses a moderately sized (e.g., ~300) set of scenarios for carefully selecting a confidence threshold above which answers are included in the prediction set. This procedure allows us to achieve calibrated confidence: with a user-specified probability, the prediction set is guaranteed to contain the correct answer for a new scenario (under the assumption that calibration and test scenarios are drawn from the same unknown distribution). CP minimizes the prediction set size, which helps the robot to stop as quickly as it can while satisfying calibrated confidence.
                 <div class="row mt-4">
                     <div class="col-md-12 text-center">
