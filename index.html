@@ -75,7 +75,7 @@
                     </a>
                     &nbsp&nbsp&nbsp
                     <a href="https://www.stanford.edu/">
-                        <image src="img/stanford.png" height="55px"> 
+                        <image src="img/stanford.png" height="65px"> 
                         <!-- Stanford University -->
                     </a>
                     &nbsp&nbsp&nbsp
@@ -192,7 +192,7 @@
                 We then leverage such semantic information with Frontier-Based Exploration (FBE). Frontiers are the locations between explored and unexplored regions, and we apply weighted sampling of the frontiers based on their semantic values on the map.
                 <br><br><p style="text-align:center;">
                     <image src="img/semantic-map.png" width="60%">
-                </p><br>
+                </p>
                 <!-- <br>
                 <div class="row mt-4">
                     <div class="col-md-12 text-center">
@@ -202,7 +202,7 @@
                     </div>
                 </div>
                 <br> -->
-                Addressing the second issue of miscalibration, we leverage <strong>multi-step conformal prediction</strong>, which allows the robot to maintain a set of possible answers (<strong>mprediction set</strong>) over time, and stop when the set reduces to a single answer. Conformal prediction uses a moderately sized (e.g., ~300) set of scenarios for carefully selecting a confidence threshold above which answers are included in the prediction set. This procedure allows us to achieve calibrated confidence: with a user-specified probability, the prediction set is guaranteed to contain the correct answer for a new scenario (under the assumption that calibration and test scenarios are drawn from the same unknown distribution). CP minimizes the prediction set size, which helps the robot to stop as quickly as it can while satisfying calibrated confidence.
+                Addressing the second issue of miscalibration, we leverage <strong>multi-step conformal prediction</strong>, which allows the robot to maintain a set of possible answers (<strong>prediction set</strong>) over time, and stop when the set reduces to a single answer. Conformal prediction uses a moderately sized (e.g., ~300) set of scenarios for carefully selecting a confidence threshold above which answers are included in the prediction set. This procedure allows us to achieve <strong>calibrated confidence</strong>: with a user-specified probability, the prediction set is guaranteed to contain the correct answer for a new scenario (under the assumption that calibration and test scenarios are drawn from the same unknown distribution). CP minimizes the prediction set size, which helps the robot to stop as quickly as it can while satisfying calibrated confidence.
                 <div class="row mt-4">
                     <div class="col-md-12 text-center">
                         <video id="v0" width="70%" preload="metadata" playsinline muted loop autoplay>
@@ -217,7 +217,7 @@
             <div class="col-md-10 col-lg-8">
                 <h3>Experiment Videos</h3>
                 <div class="card mb-4 mt-4 text-dark bg-light">
-                    <h5 class="card-header">Real Scenarios (<a href="prompts/mobile_tasks.txt">full list of tasks with objects involved</a>)</h5>
+                    <h5 class="card-header">Simulated Scenarios in Habitat-Sim</h5>
                     <div class="card-body">
 
                         <p>Choose a user instruction:</p>
@@ -345,7 +345,7 @@
                 </div>
 
                 <div class="card mb-4 mt-4 text-dark bg-light">
-                    <h5 class="card-header">Simulated Scenarios</h5>
+                    <h5 class="card-header">Real Scenarios with Fetch Robot</h5>
                     <div class="card-body">
 
                         <p>User instruction: Sort the items that human likes in the blue plate, and ones human dislikes in the green plate.<br>Items involved in each trial:</p>
