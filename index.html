@@ -137,16 +137,35 @@
                 </video>
             </div>
         </div> -->
+        <style>
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                height: 0;
+                overflow: hidden;
+            }
+            .video-container video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
         <div class="row mt-4">
             <div class="col-md-6 text-center">
-                <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
-                    <source src="videos/sim-hb.mp4" type="video/mp4">
-                </video>
+                <div class="video-container">
+                    <video id="v0" preload="metadata" playsinline muted loop autoplay>
+                        <source src="videos/sim-hb.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
             <div class="col-md-6 text-center">
-                <video id="v1" width="100%" preload="metadata" playsinline muted loop autoplay>
-                    <source src="videos/real-hb.mp4" type="video/mp4">
-                </video>
+                <div class="video-container">
+                    <video id="v1" preload="metadata" playsinline muted loop autoplay>
+                        <source src="videos/real-hb.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
         </div>
         
