@@ -1,2 +1,0 @@
-B) pick up the plastic bowl and put it in the microwave. -> chosen by human and executed
-C) pick up the metal bowl and put it the microwave.

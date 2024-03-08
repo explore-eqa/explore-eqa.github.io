@@ -10,7 +10,7 @@ $(document).ready(function() {
             var domain_name = domain_name_cmd_idx.substring(0, sep_idx);
             var cmd_idx_str = domain_name_cmd_idx.substring(sep_idx + 1);
     
-            var codegen_file = 'https://robot-help.github.io/uncertainty/' + domain_name + '/' + cmd_idx_str + '.txt';
+            var codegen_file = 'https://explore-eqa.github.io/uncertainty/' + domain_name + '/' + cmd_idx_str + '.txt';
             $.get(codegen_file, function(data) {
                 // var highlighted_code = hljs.highlight(data, {language: 'python'}).value;
                 var highlighted_code = data;
@@ -23,13 +23,12 @@ $(document).ready(function() {
         });
     
         var current_cmd_idxs = {
-            "saycan": 1,
-            "ur5": 1,
-            "bimanual": 1,
+            "sim": 1,
+            "real": 1,
         }
     
         var vid_start_times = {
-            "saycan": {
+            "sim": {
                 1: 0 * 60 + 0,
                 2: 0 * 60 + 5,
                 3: 0 * 60 + 20,
@@ -37,44 +36,16 @@ $(document).ready(function() {
                 5: 1 * 60 + 37,
                 6: 2 * 60 + 4,
                 7: 2 * 60 + 44,
-                8: 3 * 60 + 13,
-                9: 3 * 60 + 33,
-                10: 4 * 60 + 25,
-                11: 5 * 60 + 20,
-                12: 6 * 60 + 12,
-                13: 7 * 60 + 2,
-                14: 8 * 60 + 5,
-                15: 9 * 60 + 3,
-                16: 10 * 60 + 4,
             },
-            "ur5": {
+            "real": {
                 1: 0 * 60 + 0,
                 2: 0 * 60 + 23,
                 3: 0 * 60 + 45,
-                4: 1 * 60 + 6,
-                5: 1 * 60 + 28,
-                6: 1 * 60 + 50,
-                7: 2 * 60 + 12,
-                8: 2 * 60 + 34,
-                9: 2 * 60 + 55,
-                10: 3 * 60 + 15,
             },
-            "bimanual": {
-                1: 0 * 60 + 3,
-                2: 0 * 60 + 24,
-                3: 0 * 60 + 47,
-                4: 1 * 60 + 15,
-                5: 1 * 60 + 55,
-                6: 2 * 60 + 20,
-                7: 2 * 60 + 46,
-                8: 3 * 60 + 13,
-                9: 3 * 60 + 45,
-                10: 4 * 60 + 26,
-            }
         }
     
         var vid_end_times = {
-            "saycan": {
+            "sim": {
                 1: 0 * 60 + 5,
                 2: 0 * 60 + 20,
                 3: 0 * 60 + 58,
@@ -82,40 +53,12 @@ $(document).ready(function() {
                 5: 2 * 60 + 4,
                 6: 2 * 60 + 44,
                 7: 3 * 60 + 13,
-                8: 3 * 60 + 33,
-                9: 4 * 60 + 25,
-                10: 5 * 60 + 20,
-                11: 6 * 60 + 12,
-                12: 7 * 60 + 2,
-                13: 8 * 60 + 5,
-                14: 9 * 60 + 3,
-                15: 10 * 60 + 4,
-                16: 10 * 60 + 48,
             },
-            "ur5": {
+            "real": {
                 1: 0 * 60 + 22,
                 2: 0 * 60 + 44,
                 3: 1 * 60 + 5,
-                4: 1 * 60 + 27,
-                5: 1 * 60 + 49,
-                6: 2 * 60 + 11,
-                7: 2 * 60 + 33,
-                8: 2 * 60 + 54,
-                9: 3 * 60 + 14,
-                10: 3 * 60 + 36,
             },
-            "bimanual": {
-                1: 0 * 60 + 23,
-                2: 0 * 60 + 46,
-                3: 1 * 60 + 10,
-                4: 1 * 60 + 49,
-                5: 2 * 60 + 15,
-                6: 2 * 60 + 42,
-                7: 3 * 60 + 5,
-                8: 3 * 60 + 34,
-                9: 4 * 60 + 25,
-                10: 4 * 60 + 55,
-            }
         }
     
         function playSeg(vid, start_time, end_time, domain_name, desired_cmd_idx) {

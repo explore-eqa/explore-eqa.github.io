@@ -1,2 +1,0 @@
-B) pick up the plastic bowl and put it on the stove.
-D) pick up the metal bowl and put it on the stove. -> chosen by human and executed

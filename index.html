@@ -118,25 +118,6 @@
             </div>
         </div>
 
-        <!-- <div class="row mt-4">
-            <div class="col-md-12 text-center">
-                <video id="v0" width="70%" preload="metadata" playsinline muted loop autoplay>
-                    <source src="videos/knowno-microwave-score-handbrake.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div> -->
-        <!-- <div class="row mt-4">
-            <div class="col-md-6 text-center">
-                <video id="v0" width="100%" preload="metadata" playsinline muted loop autoplay>
-                    <source src="videos/visual-prompting-hb.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="col-md-6 text-center">
-                <video id="v1" width="100%" preload="metadata" playsinline muted loop autoplay>
-                    <source src="videos/cp-hb.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div> -->
         <style>
             .video-container {
                 position: relative;
@@ -153,14 +134,14 @@
             }
         </style>
         <div class="row mt-4">
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 mb-3">
                 <div class="video-container">
                     <video id="v0" preload="metadata" playsinline muted loop autoplay>
                         <source src="videos/sim-hb.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 mb-3">
                 <div class="video-container">
                     <video id="v1" preload="metadata" playsinline muted loop autoplay>
                         <source src="videos/real-hb.mp4" type="video/mp4">
@@ -263,125 +244,64 @@
                     <h5 class="card-header">Simulated Scenarios in Habitat-Sim</h5>
                     <div class="card-body">
 
-                        <p>Choose a user instruction:</p>
+                        <p>Choose a scenario:</p>
                         <select class="form-select" size="8" aria-label="size 5 select example">
-                            <option value="saycan_1">
-                                1) Pick up the bottled water.
+                            <option value="sim_1">
+                                1) Which rug did I put next to the kitchen sink? A) There is no rug B) White one C) Gray one D) Green one
                             </option>
-                            <option value="saycan_2">
-                                2) Bring me the chips.
+                            <option value="sim_2">
+                                2) How many bedside tables are there in the bedroom with the white bedding?
+                                A) Three B) None C) One D) Two
                             </option>
-                            <option value="saycan_3">
+                            <option value="sim_3">
                                 3) Put the apple in the drawer.
                             </option>
-                            <option value="saycan_4">
+                            <option value="sim_4">
                                 4) Put the rice chips in the top drawer.
                             </option>
-                            <option value="saycan_5">
+                            <option value="sim_5">
                                 5) Put the chips in the drawer.
                             </option>
-                            <option value="saycan_6">
+                            <option value="sim_6">
                                 6) Put the soda in the drawer.
                             </option>
-                            <option value="saycan_7">
+                            <option value="sim_7">
                                 7) Put the apple near the bottle.
                             </option>
-                            <option value="saycan_8">
-                                8) Put the multigrain chips near the fruit.
-                            </option>
-                            <option value="saycan_9">
-                                9) There is the kettle chips and RedBull. I ate it already. Can you dispose of it?
-                            </option>
-                            <option value="saycan_10">
-                                10) There is the sponge and energy bar. I don't want to use it for clearning any more. Can you please dispose of it?
-                            </option>
-                            <option value="saycan_11">
-                                11) Can you dispose of that fruit?
-                            </option>
-                            <option value="saycan_12">
-                                12) There is the bottled tea and Coke. It is too sweet. Can you dispose of it?
-                            </option>
-                            <option value="saycan_13">
-                                13) Put the bowl in the microwave.
-                            </option>
-                            <option value="saycan_14">
-                                14) Put the bowl on the stove.
-                            <option value="saycan_15">
-                                15) Can you dispose of the chips? It should have expired.
-                            </option>
-                            <option value="saycan_16">
-                                16) Put the RedBull in the top drawer.
-                            </option>                            
                         </select>
 
                         <div class="col-md-12 mb-2">
-                            <video id="vid_saycan" width="100%" preload="metadata" playsinline controls>
-                                <source src="videos/saycan/saycan_all_480p.mp4" type="video/mp4">
+                            <video id="vid_sim" width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/sim-all-hb.mp4" type="video/mp4">
                             </video>
                         </div>
 
-                        <div class="row" id="content_saycan_1">
-                            <div class="col-md-12" id="code_saycan_1">
+                        <div class="row" id="content_sim_1">
+                            <div class="col-md-12" id="code_sim_1">
                             </div>
                         </div>
-                        <div class="row" id="content_saycan_2" style="display:none">
-                            <div class="col-md-12" id="code_saycan_2">
+                        <div class="row" id="content_sim_2" style="display:none">
+                            <div class="col-md-12" id="code_sim_2">
                             </div>
                         </div>
-                        <div class="row" id="content_saycan_3" style="display:none">
-                            <div class="col-md-12" id="code_saycan_3">
+                        <div class="row" id="content_sim_3" style="display:none">
+                            <div class="col-md-12" id="code_sim_3">
                             </div>
                         </div>
-                        <div class="row" id="content_saycan_4" style="display:none">
-                            <div class="col-md-12" id="code_saycan_4">
+                        <div class="row" id="content_sim_4" style="display:none">
+                            <div class="col-md-12" id="code_sim_4">
                             </div>
                         </div>
-                        <div class="row" id="content_saycan_5" style="display:none">
-                            <div class="col-md-12" id="code_saycan_5">
+                        <div class="row" id="content_sim_5" style="display:none">
+                            <div class="col-md-12" id="code_sim_5">
                             </div>
                         </div>
-                        <div class="row" id="content_saycan_6" style="display:none">
-                            <div class="col-md-12" id="code_saycan_6">
+                        <div class="row" id="content_sim_6" style="display:none">
+                            <div class="col-md-12" id="code_sim_6">
                             </div>
                         </div>
-                        <div class="row" id="content_saycan_7" style="display:none">
-                            <div class="col-md-12" id="code_saycan_7">
-                            </div>
-                        </div>
-                        <div class="row" id="content_saycan_8" style="display:none">
-                            <div class="col-md-12" id="code_saycan_8">
-                            </div>
-                        </div>
-                        <div class="row" id="content_saycan_9" style="display:none">
-                            <div class="col-md-12" id="code_saycan_9">
-                            </div>
-                        </div>
-                        <div class="row" id="content_saycan_10" style="display:none">
-                            <div class="col-md-12" id="code_saycan_10">
-                            </div>
-                        </div>
-                        <div class="row" id="content_saycan_11" style="display:none">
-                            <div class="col-md-12" id="code_saycan_11">
-                            </div>
-                        </div>
-                        <div class="row" id="content_saycan_12" style="display:none">
-                            <div class="col-md-12" id="code_saycan_12">
-                            </div>
-                        </div>
-                        <div class="row" id="content_saycan_13" style="display:none">
-                            <div class="col-md-12" id="code_saycan_13">
-                            </div>
-                        </div>
-                        <div class="row" id="content_saycan_14" style="display:none">
-                            <div class="col-md-12" id="code_saycan_14">
-                            </div>
-                        </div>
-                        <div class="row" id="content_saycan_15" style="display:none">
-                            <div class="col-md-12" id="code_saycan_15">
-                            </div>
-                        </div>
-                        <div class="row" id="content_saycan_16" style="display:none">
-                            <div class="col-md-12" id="code_saycan_16">
+                        <div class="row" id="content_sim_7" style="display:none">
+                            <div class="col-md-12" id="code_sim_7">
                             </div>
                         </div>
                     </div>
@@ -393,82 +313,33 @@
 
                         <p>User instruction: Sort the items that human likes in the blue plate, and ones human dislikes in the green plate.<br>Items involved in each trial:</p>
                         <select class="form-select" size="8" aria-label="size 5 select example">
-                            <option value="ur5_1">
+                            <option value="real_1">
                                 1) sunny-side-up egg, lettuce, mustard
                             </option>
-                            <option value="ur5_2">
+                            <option value="real_2">
                                 2) mango, peanut butter, carrot
                             </option>
-                            <option value="ur5_3">
+                            <option value="real_3">
                                 3) orange, pretzel, peach
-                            </option>
-                            <option value="ur5_4">
-                                4) carrot, pizza slice, egg
-                            </option>
-                            <option value="ur5_5">
-                                5) Skittles, lemon, pea
-                            </option>
-                            <option value="ur5_6">
-                                6) sunny-side-up egg, chicken drumstick, mustard
-                            </option>
-                            <option value="ur5_7">
-                                7) donut, carrot, egg
-                            </option>
-                            <option value="ur5_8">
-                                8) donut, waffle, pear
-                            </option>
-                            <option value="ur5_9">
-                                9) tomato, peach, apple
-                            </option>
-                            <option value="ur5_10">
-                                10) egg, Skittles, lettuce
                             </option>
                         </select>
 
                         <div class="col-md-12 mb-2">
-                            <video id="vid_ur5" width="100%" preload="metadata" playsinline controls>
-                                <source src="videos/ur5/ur5_all_handbrake_crop_720p.mp4" type="video/mp4">
+                            <video id="vid_real" width="100%" preload="metadata" playsinline controls>
+                                <source src="videos/real-alhb.mp4" type="video/mp4">
                             </video>
                         </div>
 
-                        <div class="row" id="content_ur5_1">
-                            <div class="col-md-12" id="code_ur5_1">
+                        <div class="row" id="content_real_1">
+                            <div class="col-md-12" id="code_real_1">
                             </div>
                         </div>
-                        <div class="row" id="content_ur5_2" style="display:none">
-                            <div class="col-md-12" id="code_ur5_2">
+                        <div class="row" id="content_real_2" style="display:none">
+                            <div class="col-md-12" id="code_real_2">
                             </div>
                         </div>
-                        <div class="row" id="content_ur5_3" style="display:none">
-                            <div class="col-md-12" id="code_ur5_3">
-                            </div>
-                        </div>
-                        <div class="row" id="content_ur5_4" style="display:none">
-                            <div class="col-md-12" id="code_ur5_4">
-                            </div>
-                        </div>
-                        <div class="row" id="content_ur5_5" style="display:none">
-                            <div class="col-md-12" id="code_ur5_5">
-                            </div>
-                        </div>
-                        <div class="row" id="content_ur5_6" style="display:none">
-                            <div class="col-md-12" id="code_ur5_6">
-                            </div>
-                        </div>
-                        <div class="row" id="content_ur5_7" style="display:none">
-                            <div class="col-md-12" id="code_ur5_7">
-                            </div>
-                        </div>
-                        <div class="row" id="content_ur5_8" style="display:none">
-                            <div class="col-md-12" id="code_ur5_8">
-                            </div>
-                        </div>
-                        <div class="row" id="content_ur5_9" style="display:none">
-                            <div class="col-md-12" id="code_ur5_9">
-                            </div>
-                        </div>
-                        <div class="row" id="content_ur5_10" style="display:none">
-                            <div class="col-md-12" id="code_ur5_10">
+                        <div class="row" id="content_real_3" style="display:none">
+                            <div class="col-md-12" id="code_real_3">
                             </div>
                         </div>
                     </div>

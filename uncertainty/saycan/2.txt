@@ -1,2 +1,0 @@
-B) Pick up the bag of kettle chips and navigate to human.
-D) Pick up the bag of rice chips and navigate to human. -> chosen by human and executed

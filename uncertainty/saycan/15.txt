@@ -1,3 +1,0 @@
-A) pick up the rice chips and put it in the landfill bin. -> chosen by human and executed
-B) pick up the jalapeno chips and put it in the landfill bin.
-E) pick up the kettle chips and put it in the landfill bin.
