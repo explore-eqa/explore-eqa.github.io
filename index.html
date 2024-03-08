@@ -64,24 +64,20 @@
                 <li><a href="//jadenvc.github.io">Jaden Clark</a></li>
                 <li><a href="//www.anushridixit.com">Anushri Dixit</a></li>
                 <li><a href="//mashaitkina.weebly.com">Masha Itkina</a></li>
-                <!-- <br> -->
                 <li><a href="//irom-lab.princeton.edu/majumdar">Anirudha Majumdar</a></li>
                 <li><a href="//dorsa.fyi">Dorsa Sadigh</a></li>
                 <!-- <br> -->
                 <br>
                     <a href="https://www.princeton.edu/">
                         <image src="img/PU1line.svg" height="40px"> 
-                        <!-- Princeton University -->
                     </a>
                     &nbsp&nbsp&nbsp
                     <a href="https://www.stanford.edu/">
                         <image src="img/stanford.png" height="65px"> 
-                        <!-- Stanford University -->
                     </a>
                     &nbsp&nbsp&nbsp
                     <a href="https://www.tri.global/">
                         <image src="img/toyota-research-institute.png" height="50px"> 
-                        <!-- Stanford University -->
                     </a>
                 </ul>
             </div>
@@ -90,30 +86,40 @@
             </div> -->
         </div>
 
+        <style>
+            .row.justify-content-md-center {
+                margin-top: 0; /* Adjust as needed */
+                margin-bottom: 0; /* Adjust as needed */
+            }
+            .col-md-2.text-center {
+                margin-top: 0; /* Adjust as needed */
+                margin-bottom: 0; /* Adjust as needed */
+            }
+        </style>
+        
         <div class="row justify-content-md-center">
             <div class="col-md-2 text-center">
                 <a href="https://arxiv.org/abs/">
-                <image src="img/paper_small.png" height="45px">
-                <h4><strong>Paper</strong></h4>
-                <!-- <h6>Paper</h6> -->
+                    <img src="img/paper_small.png" height="45px">
+                    <h4><strong>Paper</strong></h4>
                 </a>
             </div>
             <div class="col-md-2 text-center">
                 <a href="https://youtu.be/">
-                <image src="img/youtube_icon.png" height="45px">
-                <h4><strong>Video</strong></h4>
+                    <img src="img/youtube_icon.png" height="45px">
+                    <h4><strong>Video</strong></h4>
                 </a>
             </div>
             <div class="col-md-2 text-center">
                 <a href="https://github.com/">
-                <image src="img/github.png" height="45px">
-                <h4><strong>Code</strong></h4>
+                    <img src="img/github.png" height="45px">
+                    <h4><strong>Code</strong></h4>
                 </a>
             </div>
             <div class="col-md-2 text-center">
                 <a href="https://github.com/">
-                <image src="img/github.png" height="45px">
-                <h4><strong>Dataset</strong></h4>
+                    <img src="img/github.png" height="45px">
+                    <h4><strong>Dataset</strong></h4>
                 </a>
             </div>
         </div>
@@ -132,8 +138,12 @@
                 width: 100%;
                 height: 100%;
             }
+            .no-gutters {
+                margin-right: 0;
+                margin-left: 0;
+            }
         </style>
-        <div class="row mt-4">
+        <div class="row mt-4 no-gutters">
             <div class="col-md-6 mb-3">
                 <div class="video-container">
                     <video id="v0" preload="metadata" playsinline muted loop autoplay>
@@ -326,7 +336,7 @@
 
                         <div class="col-md-12 mb-2">
                             <video id="vid_real" width="100%" preload="metadata" playsinline controls>
-                                <source src="videos/real-alhb.mp4" type="video/mp4">
+                                <source src="videos/real-all-hb.mp4" type="video/mp4">
                             </video>
                         </div>
 
