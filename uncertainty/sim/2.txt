@@ -1,2 +1,7 @@
-B) Pick up the bag of kettle chips and navigate to human.
-D) Pick up the bag of rice chips and navigate to human. -> chosen by human and executed
+How many bedside tables are there in the bedroom with the white bedding?
+A) Three
+B) None
+C) One
+D) Two
+
+Chosen answer at step 43: D

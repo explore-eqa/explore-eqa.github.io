@@ -1,1 +1,5 @@
-E) Open the top drawer and put the rice chips in it. -> executed without human help
+Is the lamp next to the sofa turned on?
+A) Yes
+B) No
+
+Chosen answer at step 12: A

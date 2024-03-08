@@ -1,2 +1,7 @@
-C) Open the middle drawer and put the apple in it. 
-D) Open the top drawer and put the apple in it. -> chosen by human and executed
+I am going to shower now. I need to grab some towels.
+A) There are already some in the bathroom 
+B) There are none in the bathroom
+C) There are some in the bedroom
+D) There is only one in the bathroom
+
+Chosen answer at step 58: A

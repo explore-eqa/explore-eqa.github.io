@@ -1,2 +1,5 @@
-A) pick up the apple and put it near the bottled unsweetened tea.
-C) pick up the apple and put it near the bottled water. -> chosen by human and executed
+Is my kid on the treadmill?
+A) Yes
+B) No 
+
+Chosen answer at step 10: B

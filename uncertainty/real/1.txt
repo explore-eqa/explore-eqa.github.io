@@ -1,10 +1,7 @@
-Step 1:
-A) put sunny-side-up egg in blue plate. -> chosen by human and executed
-E) put mustard in green plate.
+What kind of stools are under the white board?
+A) White ones
+B) Dark blue ones
+C) Black ones
+D) Lime green ones
 
-Step 2:
-A) put mustard in green plate. -> executed without human help
-
-Step 3:
-C) put lettuce in green plate.
-E) put lettuce in blue plate. -> chosen by human and executed
+Chosen answer at step 6: D
