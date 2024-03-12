@@ -1,5 +1,4 @@
 Is the dishwasher in the kitchen open or closed?
 A) Closed
 B) Open
-
 Chosen answer at step 16: B

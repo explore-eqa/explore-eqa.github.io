@@ -3,5 +3,4 @@ A) Three
 B) None
 C) One
 D) Two
-
 Chosen answer at step 43: D

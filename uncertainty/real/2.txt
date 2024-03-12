@@ -1,5 +1,4 @@
 Is there something here that I can cook my cookie dough in?
 A) Yes
 B) No
-
 Chosen answer at step 5: A

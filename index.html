@@ -113,7 +113,7 @@
             </div>
         </div>
 
-        <style>
+        <!-- <style>
             .video-container {
                 position: relative;
                 padding-bottom: 56.25%; /* 16:9 aspect ratio */
@@ -147,8 +147,65 @@
                     </video>
                 </div>
             </div>
-        </div>
-        
+        </div> -->
+
+        <section class="hero is-light is-small">
+            <div class="hero-body">
+              <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                  <div class="item item-steve">
+                    <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/steve.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-chair-tp">
+                    <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/chair-tp.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-shiba">
+                    <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/shiba.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-fullbody">
+                    <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                      <source src="videos/sim-hb.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-blueshirt">
+                    <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                      <source src="videos/real-hb.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-mask">
+                    <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/mask.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-coffee">
+                    <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/coffee.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item item-toby">
+                    <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+                      <source src="./static/videos/toby2.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
         <div class="row justify-content-md-center">
             <div class="col-md-12 col-lg-10">
                 <h3 class="mt-4 mb-2">
@@ -244,15 +301,15 @@
                     HM-EQA Dataset
                 </h3>
                 <p class="text-justify">
-                    While prior work has primarily considered synthetic scenes and simple questions such as “what is the color of the coffee table?” involving basic attributes of relatively large pieces of furniture, we are interested in applying our VLM-based framework in more realistic and diverse scenarios, where the question can be more open-ended and possibly require semantic reasoning. To this end, we propose <a href="//github.com/Stanford-ILIAD/active-eqa/tree/master/data">HM-EQA</a>, a new EQA dataset with 500 questions based on 312 scenes from the Habitat-Matterport 3D Research Dataset (HM3D). We consider five categories of questions:
+                    While prior work has primarily considered synthetic scenes and simple questions such as “what is the color of the coffee table?” involving basic attributes of relatively large pieces of furniture, we are interested in applying our VLM-based framework in more realistic and diverse scenarios, where the question can be more open-ended and possibly require semantic reasoning. To this end, we propose <a href="//github.com/Stanford-ILIAD/active-eqa/tree/master/data">HM-EQA</a>, a new EQA dataset with 500 questions based on 312 scenes from the <a href="//aihabitat.org/datasets/hm3d-semantics/">Habitat-Matterport 3D Research Dataset (HM3D)</a>. We consider five categories of questions:
                     <!-- <br><p style="text-align:center;">
                         <image src="img/trial.png" width="60%">
                     </p> -->
-                    <br>1) Identification: asking about identifying the type of an object, e.g., “Which tablecloth is on the dining table? A) Red B) White C) Black D) Gray”
-                    <br>2) Countin: asking about the number of objects, e.g., “My friends and I were playing pool last night. Did we leave any cues on the table? A) None B) One C) Two D) Three”
-                    <br>3) Existence: asking if an object is present at a location, e.g., “Did I leave my jacket on the bench near the front door? A) Yes B) No”
-                    <br>4) State: asking about the state of an object, e.g., “Is the air conditioning in the living room turned on? A) Yes B) No” or “Is the curtain in the master bedroom closed? A) Yes B) No”
-                    <br>5) Location: asking about the location of an object, e.g., “Where have I left the black suitcase? A) At the corner of the bedroom B) In the hallway C) In the storage room D) Next to TV in the living room”
+                    <br>1) <strong>Identification</strong>: asking about identifying the type of an object, e.g., “Which tablecloth is on the dining table? A) Red B) White C) Black D) Gray”
+                    <br>2) <strong>Counting</strong>: asking about the number of objects, e.g., “My friends and I were playing pool last night. Did we leave any cues on the table? A) None B) One C) Two D) Three”
+                    <br>3) <strong>Existence</strong>: asking if an object is present at a location, e.g., “Did I leave my jacket on the bench near the front door? A) Yes B) No”
+                    <br>4) <strong>State</strong>: asking about the state of an object, e.g., “Is the air conditioning in the living room turned on? A) Yes B) No” or “Is the curtain in the master bedroom closed? A) Yes B) No”
+                    <br>5) <strong>Location</strong>: asking about the location of an object, e.g., “Where have I left the black suitcase? A) At the corner of the bedroom B) In the hallway C) In the storage room D) Next to TV in the living room”
             </div>
             <br>
         </div>

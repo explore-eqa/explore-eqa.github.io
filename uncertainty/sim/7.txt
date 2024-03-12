@@ -1,5 +1,4 @@
 Is my kid on the treadmill?
 A) Yes
 B) No 
-
 Chosen answer at step 10: B

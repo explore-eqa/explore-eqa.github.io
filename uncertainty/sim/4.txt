@@ -1,5 +1,4 @@
 Is the lamp next to the sofa turned on?
 A) Yes
 B) No
-
 Chosen answer at step 12: A

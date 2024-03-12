@@ -3,5 +3,4 @@ A) There is no rug
 B) White one
 C) Gray one
 D) Green one
-
 Chosen answer at step 3: A

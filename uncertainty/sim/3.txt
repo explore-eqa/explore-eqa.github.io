@@ -3,5 +3,4 @@ A) There are already some in the bathroom
 B) There are none in the bathroom
 C) There are some in the bedroom
 D) There is only one in the bathroom
-
 Chosen answer at step 58: A
