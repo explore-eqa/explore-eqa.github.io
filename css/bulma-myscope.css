@@ -304,7 +304,7 @@
   cursor: not-allowed;
 }
 .myscope blockquote,
-body .myscope,
+.myscope body,
 .myscope dd,
 .myscope dl,
 .myscope dt,
@@ -317,7 +317,7 @@ body .myscope,
 .myscope h5,
 .myscope h6,
 .myscope hr,
-html .myscope,
+.myscope html,
 .myscope iframe,
 .myscope legend,
 .myscope li,
@@ -347,7 +347,7 @@ html .myscope,
 .myscope textarea {
   margin: 0;
 }
-html .myscope {
+.myscope html {
   box-sizing: border-box;
 }
 .myscope *,
@@ -375,7 +375,7 @@ html .myscope {
 .myscope th:not([align]) {
   text-align: inherit;
 }
-html .myscope {
+.myscope html {
   background-color: #fff;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
@@ -398,7 +398,7 @@ html .myscope {
 .myscope section {
   display: block;
 }
-body .myscope,
+.myscope body,
 .myscope button,
 .myscope input,
 .myscope select,
@@ -411,7 +411,7 @@ body .myscope,
   -webkit-font-smoothing: auto;
   font-family: monospace;
 }
-body .myscope {
+.myscope body {
   color: #4a4a4a;
   font-size: 1em;
   font-weight: 400;
@@ -5471,12 +5471,12 @@ body .myscope {
 .myscope .navbar.is-fixed-top {
   top: 0;
 }
-body .myscope.has-navbar-fixed-top,
-html .myscope.has-navbar-fixed-top {
+.myscope body.has-navbar-fixed-top,
+.myscope html.has-navbar-fixed-top {
   padding-top: 3.25rem;
 }
-body .myscope.has-navbar-fixed-bottom,
-html .myscope.has-navbar-fixed-bottom {
+.myscope body.has-navbar-fixed-bottom,
+.myscope html.has-navbar-fixed-bottom {
   padding-bottom: 3.25rem;
 }
 .myscope .navbar-brand,
@@ -5671,12 +5671,12 @@ html .myscope.has-navbar-fixed-bottom {
     max-height: calc(100vh - 3.25rem);
     overflow: auto;
   }
-  body .myscope.has-navbar-fixed-top-touch,
-  html .myscope.has-navbar-fixed-top-touch {
+  .myscope body.has-navbar-fixed-top-touch,
+  .myscope html.has-navbar-fixed-top-touch {
     padding-top: 3.25rem;
   }
-  body .myscope.has-navbar-fixed-bottom-touch,
-  html .myscope.has-navbar-fixed-bottom-touch {
+  .myscope body.has-navbar-fixed-bottom-touch,
+  .myscope html.has-navbar-fixed-bottom-touch {
     padding-bottom: 3.25rem;
   }
 }
@@ -5851,20 +5851,20 @@ html .myscope.has-navbar-fixed-bottom {
   .myscope .navbar.is-fixed-top-desktop {
     top: 0;
   }
-  body .myscope.has-navbar-fixed-top-desktop,
-  html .myscope.has-navbar-fixed-top-desktop {
+  .myscope body.has-navbar-fixed-top-desktop,
+  .myscope html.has-navbar-fixed-top-desktop {
     padding-top: 3.25rem;
   }
-  body .myscope.has-navbar-fixed-bottom-desktop,
-  html .myscope.has-navbar-fixed-bottom-desktop {
+  .myscope body.has-navbar-fixed-bottom-desktop,
+  .myscope html.has-navbar-fixed-bottom-desktop {
     padding-bottom: 3.25rem;
   }
-  body .myscope.has-spaced-navbar-fixed-top,
-  html .myscope.has-spaced-navbar-fixed-top {
+  .myscope body.has-spaced-navbar-fixed-top,
+  .myscope html.has-spaced-navbar-fixed-top {
     padding-top: 5.25rem;
   }
-  body .myscope.has-spaced-navbar-fixed-bottom,
-  html .myscope.has-spaced-navbar-fixed-bottom {
+  .myscope body.has-spaced-navbar-fixed-bottom,
+  .myscope html.has-spaced-navbar-fixed-bottom {
     padding-bottom: 5.25rem;
   }
   .myscope .navbar-link.is-active,
