@@ -159,8 +159,9 @@
 
         <div class="row justify-content-md-center">
             <div class="col-md-12 col-lg-10">
+                <br>
                 <p class="text-justify text-center">
-                    <strong>We combine VLM's commonsense reasoning and rigorous uncertainty quantification to enable agents to efficiently explore relevant regions, and then stop to answer questions about unknown 3D environments.</strong>
+                    <strong>We combine VLM's commonsense reasoning and rigorous uncertainty quantification to enable agents to efficiently explore relevant regions, and then stop to answer questions about unknown 3D environments with calibrated confidence.</strong>
                 </p>
             </div>
         </div>
@@ -312,9 +313,16 @@
                     </div>
                 </div>
                 We then leverage such semantic information with Frontier-Based Exploration (FBE). Frontiers are the locations between explored and unexplored regions, and we apply weighted sampling of the frontiers based on their semantic values on the map.
-                <br><br><p style="text-align:center;">
+                <!-- <br><br><p style="text-align:center;">
                     <image src="img/semantic-map.png" width="60%">
-                </p>
+                </p> -->
+                <div class="row mt-4">
+                    <div class="col-md-12 text-center">
+                        <video id="v0" width="70%" preload="metadata" playsinline muted loop autoplay>
+                            <source src="videos/semantic.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
                 <!-- <br>
                 <div class="row mt-4">
                     <div class="col-md-12 text-center">
