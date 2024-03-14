@@ -28,13 +28,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
     <link rel="stylesheet" href="css/app.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" /> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" /> -->
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script> -->
     <!-- <link rel="stylesheet" href="css/bulma.min.css"> -->
-    <link rel="stylesheet" href="css/bulma-myscope.css">
     <!-- <link rel="stylesheet" href="css/bulma-carousel.min.css"> -->
     <!-- <link rel="stylesheet" href="css/bulma-slider.min.css"> -->
+    <link rel="stylesheet" href="css/bulma-myscope.css">
+
+    <!-- https://github.com/jgthms/bulma/issues/302#issuecomment-441890938 Follow this to use bulma style here without conflicts with app.css. I put bulma.min.css, bulma-carousel.min.css, and bulma-slider.min.css into a single file before applying less. -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
@@ -158,6 +157,14 @@
             </div>
         </div> -->
 
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-lg-10">
+                <p class="text-justify">
+                    We combine VLM's commonsense reasoning and rigorous uncertainty quantification to enable agents to efficiently explore relevant regions, and then stop to answer questions about unknown 3D environments.
+                </p>
+            </div>
+        </div>
+
         <div class='myscope'>
           <section class="hero is-light is-small">
             <div class="hero-body">
@@ -165,38 +172,44 @@
                 <br><br>
                 <div id="results-carousel" class="carousel results-carousel">
                     <div class="item">
-                    <video poster="" autoplay muted loop height="100%">
-                        <source src="videos/sim-hb.mp4"
+                    <video poster="" autoplay muted loop height="90%">
+                        <source src="videos/sim-1.mp4"
                               type="video/mp4">
                     </video>
                   </div>
                   <div class="item">
-                    <video poster="" autoplay muted loop height="100%">
-                        <source src="videos/real-hb.mp4"
+                    <video poster="" autoplay muted loop height="90%">
+                        <source src="videos/sim-2.mp4"
                               type="video/mp4">
                     </video>
                   </div>
                   <div class="item">
-                    <video poster="" autoplay muted loop height="100%">
-                        <source src="videos/sim-hb.mp4"
+                    <video poster="" autoplay muted loop height="90%">
+                        <source src="videos/sim-3.mp4"
                         type="video/mp4">
                     </video>
                   </div>
                   <div class="item">
-                    <video poster="" autoplay muted loop height="100%">
-                        <source src="videos/sim-hb.mp4"
+                    <video poster="" autoplay muted loop height="90%">
+                        <source src="videos/sim-4.mp4"
                         type="video/mp4">
                     </video>
                   </div>
                   <div class="item">
-                    <video poster="" autoplay muted loop height="100%">
-                        <source src="./static/videos/mask.mp4"
+                    <video poster="" autoplay muted loop height="90%">
+                        <source src="videos/sim-5.mp4"
                               type="video/mp4">
                     </video>
                   </div>
                   <div class="item">
-                    <video poster="" autoplay muted loop height="100%">
-                        <source src="./static/videos/coffee.mp4"
+                    <video poster="" autoplay muted loop height="90%">
+                        <source src="videos/sim-6.mp4"
+                              type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="item">
+                    <video poster="" autoplay muted loop height="90%">
+                        <source src="videos/sim-7.mp4"
                               type="video/mp4">
                     </video>
                   </div>
@@ -314,7 +327,7 @@
             <br>
         </div>
 
-        <div class="row justify-content-md-center mt-4">
+        <!-- <div class="row justify-content-md-center mt-4">
             <div class="col-md-10 col-lg-8">
                 <h3>Experiment Videos</h3>
                 <div class="card mb-4 mt-4 text-dark bg-light">
@@ -422,7 +435,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
         <div class="row justify-content-md-center">
             <div class="col-md-12 col-lg-10">
                 <h3>
@@ -446,7 +459,7 @@
                     Acknowledgements
                 </h3>
                 <p class="text-justify">
-                    We thank the contractors at TRI for helping post-processing the HM-EQA dataset. The authors were partially supported by the Toyota Research Institute (TRI), the NSF CAREER Award [#2044149], and the Office of Naval Research [N00014-23-1-2148]. This article solely reflects the opinions and conclusions of its authors and NSF, ONR, TRI or any other Toyota entity. The website template is from <a href="https://robot-help.github.io/">KnowNo</a> and <a href="https://nerfies.github.io/">nerfies</a>.
+                    We thank the contractors at TRI for helping post-processing the HM-EQA dataset. The authors were partially supported by the Toyota Research Institute (TRI), the NSF CAREER Award [#2044149], and the Office of Naval Research [N00014-23-1-2148]. This article solely reflects the opinions and conclusions of its authors and NSF, ONR, TRI or any other Toyota entity. The website template is from <a href="https://robot-help.github.io/">KnowNo</a> and <a href="https://nerfies.github.io/">Nerfies</a>.
                 </p>
             </div>
         </div>
