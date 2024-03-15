@@ -10615,7 +10615,7 @@ html .myscope.has-navbar-fixed-bottom {
   width: 100%;
 }
 .myscope .hero.has-carousel .hero-body {
-  margin: 0 3rem;
+  margin: 0 1rem;
   z-index: 10;
 }
 @-webkit-keyframes spinAround {
