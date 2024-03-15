@@ -10273,6 +10273,7 @@ html .myscope.has-navbar-fixed-bottom {
 .myscope .slider-container .slider-item {
   flex: none;
   /* padding: 1rem; */
+  padding-left: 1rem;
 }
 .myscope .slider-container .slider-item .image.is-covered img {
   -o-object-fit: cover;
@@ -10288,6 +10289,7 @@ html .myscope.has-navbar-fixed-bottom {
   padding-top: 56.25%;
   /* margin: 1rem;
   padding: 1rem; */
+  padding-left: 1rem;
   position: relative;
 }
 .myscope .slider-container .slider-item .video-container.is-1by1,
