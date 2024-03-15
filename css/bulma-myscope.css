@@ -10391,9 +10391,9 @@ html .myscope.has-navbar-fixed-bottom {
 .myscope .hero.has-carousel .hero-carousel {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0.5rem;
   bottom: 0;
-  right: 0;
+  right: 0.5rem;
   height: auto;
   border: none;
   margin: auto;
