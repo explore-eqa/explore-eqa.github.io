@@ -10263,12 +10263,14 @@ html .myscope.has-navbar-fixed-bottom {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   min-height: 100%;
+  padding: 1rem;
 }
 .myscope .slider-container.is-vertical {
   flex-direction: column;
 }
 .myscope .slider-container .slider-item {
   flex: none;
+  padding: 1rem;
 }
 .myscope .slider-container .slider-item .image.is-covered img {
   -o-object-fit: cover;
@@ -10282,7 +10284,8 @@ html .myscope.has-navbar-fixed-bottom {
   height: 0;
   padding-bottom: 0;
   padding-top: 56.25%;
-  margin: 0;
+  margin: 1rem;
+  padding: 1rem;
   position: relative;
 }
 .myscope .slider-container .slider-item .video-container.is-1by1,
