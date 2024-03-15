@@ -10263,8 +10263,9 @@ html .myscope.has-navbar-fixed-bottom {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   min-height: 100%;
-  padding: 1rem;
-  margin: 0 -1rem;
+  /* padding: 1rem;
+  margin: 0 -1rem; */
+  left: 1rem;
 }
 .myscope .slider-container.is-vertical {
   flex-direction: column;
