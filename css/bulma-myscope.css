@@ -10265,7 +10265,7 @@ html .myscope.has-navbar-fixed-bottom {
   min-height: 100%;
   /* padding: 1rem;
   margin: 0 -1rem; */
-  left: 1rem;
+  padding-left: 1rem;
 }
 .myscope .slider-container.is-vertical {
   flex-direction: column;
