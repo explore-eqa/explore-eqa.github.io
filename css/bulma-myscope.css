@@ -10263,16 +10263,17 @@ html .myscope.has-navbar-fixed-bottom {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   min-height: 100%;
-  padding: 1rem;
-  /* margin: 0; */
-  /* margin: 0 -1rem; */
+  /* padding: 1rem;
+  margin: 0 -1rem;
+  /* left: 1rem; */
+  padding-left: 50px;
 }
 .myscope .slider-container.is-vertical {
   flex-direction: column;
 }
 .myscope .slider-container .slider-item {
   flex: none;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .myscope .slider-container .slider-item .image.is-covered img {
   -o-object-fit: cover;
@@ -10286,8 +10287,8 @@ html .myscope.has-navbar-fixed-bottom {
   height: 0;
   padding-bottom: 0;
   padding-top: 56.25%;
-  /* margin: 1rem; */
-  padding: 1rem;
+  /* margin: 1rem;
+  padding: 1rem; */
   position: relative;
 }
 .myscope .slider-container .slider-item .video-container.is-1by1,
@@ -10403,6 +10404,7 @@ html .myscope.has-navbar-fixed-bottom {
   border: none;
   margin: auto;
   z-index: 0;
+  padding: 1rem;
 }
 .myscope .hero.has-carousel .hero-carousel .slider {
   width: 100%;
@@ -10411,6 +10413,7 @@ html .myscope.has-navbar-fixed-bottom {
   height: 100%!important;
   max-height: 100%;
   z-index: 0;
+  padding: 1rem;
 }
 .myscope .hero.has-carousel .hero-carousel .slider .has-background {
   max-height: 100%;
@@ -10427,6 +10430,7 @@ html .myscope.has-navbar-fixed-bottom {
 .myscope .hero.has-carousel .hero-body {
   margin: 0 3rem;
   z-index: 10;
+  padding: 1rem;
 }
 @-webkit-keyframes spinAround {
   from {
